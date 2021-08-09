@@ -4,8 +4,11 @@ Smart Car Side Mirror is using OAK-D camera to detect the vehicle, measure the d
 
 # Samples
 
-Yellow warning for the car when is less than 20m from the camera.
+Yellow warning when the car when is less than 20m from the camera.
 ![image](https://user-images.githubusercontent.com/17445640/128688424-1dc3440c-cc4e-43dc-9dfc-db4f451bf4cb.png)
+
+Red warning when the car is near or at the blind spot to our car.
+![image](https://user-images.githubusercontent.com/17445640/128722554-d7fbdc03-bdb0-4950-be72-55d906dd2576.png)
 
 # Installation
 
