@@ -1,6 +1,6 @@
 # SmartCarSideMirror
 
-Smart Car Side Mirror is using OAK-D camera to detect the vehicle, measure the distance and create a alarm system for the user when driving. The aim of this project is for safety driving purpose.
+Smart Car Side Mirror is using OAK-D camera to detect the vehicle with OPENVINO and depthai, measure the distance and create a alarm system for the user when driving. The aim of this project is for safety driving purpose.
 
 # Samples
 
