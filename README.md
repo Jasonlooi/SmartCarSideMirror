@@ -9,9 +9,11 @@ Yellow warning for the car when is less than 20m from the camera.
 
 # Installation
 
-run requirement.txt
+run 
+python3 -m pip install -r requirements.txt
 
 Get the dataset video file from MEGA link : https://mega.nz/file/QZgClazT#Vv67k7QLdvTjBIHDuCmrh3eaCtuYLrSxmPJFP5GCDAU
 and change the videoPath directories to this dataset video directory
 
-run Final_code.py
+run 
+Final_code.py
