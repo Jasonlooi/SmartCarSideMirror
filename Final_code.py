@@ -7,7 +7,6 @@ from time import monotonic
 from shapely.geometry import Point, Polygon
 
 nnPath    = str((Path(__file__).parent / Path('./models/OpenVINO_2021_2/vehicle-detection-adas-0002.blob')).resolve().absolute())
-imgPath = str((Path(__file__).parent / Path('./datasets/car_1080/10.jpg')).resolve().absolute())
 videoPath = str((Path(__file__).parent / Path('./dataset/rgb_pasar.mp4')).resolve().absolute())
 
 labelMap = ["background", "vehicle","Pedestrian","Bike"]
