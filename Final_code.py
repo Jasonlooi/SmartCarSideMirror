@@ -7,7 +7,7 @@ from time import monotonic
 from shapely.geometry import Point, Polygon
 
 nnPath    = str((Path(__file__).parent / Path('./models/OpenVINO_2021_2/vehicle-detection-adas-0002.blob')).resolve().absolute())
-videoPath = str((Path(__file__).parent / Path('./dataset/rgb_pasar.mp4')).resolve().absolute())
+videoPath = str((Path(__file__).parent / Path('./rgb_pasar.mp4')).resolve().absolute())
 
 labelMap = ["background", "vehicle","Pedestrian","Bike"]
 
@@ -50,7 +50,6 @@ nn.out.link(nnOut.input)
 
 # Pipeline defined, now the device is connected to
 with dai.Device(pipeline) as device:
-    out = cv2.VideoWriter('rgb.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 30, (1920, 1080))
     # Start pipeline
     device.startPipeline()
 
@@ -62,7 +61,6 @@ with dai.Device(pipeline) as device:
 
     cap = cv2.VideoCapture(videoPath)
 
-    startTime = time.monotonic()
     counter = 0
     ini_dist = 0
     detections = []
@@ -138,7 +136,6 @@ with dai.Device(pipeline) as device:
         width = int(frame.shape[1] * scale / 100)
         height = int(frame.shape[0] * scale / 100)
         dim = (width, height)
-        out.write(frame)
         M = cv2.resize(frame,dim)
 
         # SHow the result
